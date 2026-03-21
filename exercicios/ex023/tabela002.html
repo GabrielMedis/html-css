@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position:relative;
         }
         
         caption {
@@ -27,11 +28,25 @@
             background-color: grey;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        /*:nthchild()pode ser odd = impar ou even = par
+        para colocar uma cor para impares e uma cor para pares*/
+
         th.posiçao {
             width: 20px;
             padding: 0px -10px 0px -10px;
         }
         td.numero {
+            width: 100px;
             text-align: right;
         }
         td.total {
@@ -55,6 +70,8 @@
                 TR, TD, TH
             TFOOT
                 TR, TD, TH
+            scope="col" = para baixo
+            scope="row" = é para frente
         -->
     <table>
         <caption>População das unidades federativas</caption>
@@ -67,57 +84,57 @@
         </thead>
         <tbody>
             <tr>
-                <th class="posiçao">1</th>
+                <th class="posiçao">1º</th>
                 <td>São Paulo</td>
                 <td class="numero">46 081 801</td>
             </tr>
             <tr>
-                <th class="posiçao">2</th>
+                <th class="posiçao">2º</th>
                 <td>Minas Gerais</td>
                 <td class="numero">21 393 441</td>
             </tr>
             <tr>
-                <th class="posiçao">3</th>
+                <th class="posiçao">3º</th>
                 <td> Rio de Janeiro</td>
                 <td class="numero">17 223 547	</td>
             </tr>
             <tr>
-                <th class="posiçao">4</th>
+                <th class="posiçao">4º</th>
                 <td>Bahia</td>
                 <td class="numero">14 870 907</td>
             </tr>
             <tr>
-                <th class="posiçao">5</th>
+                <th class="posiçao">5º</th>
                 <td>Paraná</td>
                 <td class="numero">11 890 517	</td>
             </tr>
             <tr>
-                <th class="posiçao">6</th>
+                <th class="posiçao">6º</th>
                 <td>Rio Grande do Sul</td>
                 <td class="numero">11 233 263	</td>
             </tr>
             <tr>
-                <th class="posiçao">7</th>
+                <th class="posiçao">7º</th>
                 <td>Pernambuco</td>
                 <td class="numero">9 562 007</td>
             </tr>
             <tr>
-                <th class="posiçao">8</th>
+                <th class="posiçao">8º</th>
                 <td> Ceará</td>
                 <td class="numero">9 268 836</td>
             </tr>
             <tr>
-                <th class="posiçao">'9</th>
+                <th class="posiçao">9º</th>
                 <td>Pará</td>
                 <td class="numero">8 711 196</td>
             </tr>
             <tr>
-                <th class="posiçao">10</th>
+                <th class="posiçao">10º</th>
                 <td> Santa Catarina</td>
                 <td class="numero">8 187 029</td>
             </tr>
             <tr>
-                <th class="posiçao">11</th>
+                <th class="posiçao">11º</th>
                 <td>Goiás</td>
                 <td class="numero">7 423 629</td>
             </tr>
@@ -130,5 +147,14 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod repudiandae molestias, consequuntur facere nisi qui molestiae odit voluptas quibusdam fugit consequatur quos commodi? Quos ipsum fuga nihil ipsam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit assumenda tempore eaque! Laboriosam blanditiis necessitatibus, voluptas, amet voluptatum soluta commodi minima, dolore unde excepturi aspernatur error neque adipisci eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem ea impedit iusto illum libero inventore reprehenderit. Labore sed temporibus dolore ad, dolor sequi omnis unde fugiat? Debitis, minima enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero earum distinctio itaque doloribus quibusdam possimus, unde temporibus magni sint cupiditate dolor omnis, at fugiat commodi delectus fugit harum placeat rerum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod repudiandae molestias, consequuntur facere nisi qui molestiae odit voluptas quibusdam fugit consequatur quos commodi? Quos ipsum fuga nihil ipsam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit assumenda tempore eaque! Laboriosam blanditiis necessitatibus, voluptas, amet voluptatum soluta commodi minima, dolore unde excepturi aspernatur error neque adipisci eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem ea impedit iusto illum libero inventore reprehenderit. Labore sed temporibus dolore ad, dolor sequi omnis unde fugiat? Debitis, minima enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero earum distinctio itaque doloribus quibusdam possimus, unde temporibus magni sint cupiditate dolor omnis, at fugiat commodi delectus fugit harum placeat rerum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod repudiandae molestias, consequuntur facere nisi qui molestiae odit voluptas quibusdam fugit consequatur quos commodi? Quos ipsum fuga nihil ipsam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit assumenda tempore eaque! Laboriosam blanditiis necessitatibus, voluptas, amet voluptatum soluta commodi minima, dolore unde excepturi aspernatur error neque adipisci eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem ea impedit iusto illum libero inventore reprehenderit. Labore sed temporibus dolore ad, dolor sequi omnis unde fugiat? Debitis, minima enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero earum distinctio itaque doloribus quibusdam possimus, unde temporibus magni sint cupiditate dolor omnis, at fugiat commodi delectus fugit harum placeat rerum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod repudiandae molestias, consequuntur facere nisi qui molestiae odit voluptas quibusdam fugit consequatur quos commodi? Quos ipsum fuga nihil ipsam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit assumenda tempore eaque! Laboriosam blanditiis necessitatibus, voluptas, amet voluptatum soluta commodi minima, dolore unde excepturi aspernatur error neque adipisci eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem ea impedit iusto illum libero inventore reprehenderit. Labore sed temporibus dolore ad, dolor sequi omnis unde fugiat? Debitis, minima enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero earum distinctio itaque doloribus quibusdam possimus, unde temporibus magni sint cupiditate dolor omnis, at fugiat commodi delectus fugit harum placeat rerum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quod repudiandae molestias, consequuntur facere nisi qui molestiae odit voluptas quibusdam fugit consequatur quos commodi? Quos ipsum fuga nihil ipsam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit assumenda tempore eaque! Laboriosam blanditiis necessitatibus, voluptas, amet voluptatum soluta commodi minima, dolore unde excepturi aspernatur error neque adipisci eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, rem ea impedit iusto illum libero inventore reprehenderit. Labore sed temporibus dolore ad, dolor sequi omnis unde fugiat? Debitis, minima enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero earum distinctio itaque doloribus quibusdam possimus, unde temporibus magni sint cupiditate dolor omnis, at fugiat commodi delectus fugit harum placeat rerum.</p>
 </body>
 </html>
