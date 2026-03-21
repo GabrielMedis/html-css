@@ -16,13 +16,23 @@
             border: 1px solid black;
         }
         th {
-            background-color: lightgrey;
+            background-color: grey;
+            color: white;
         }
         th.posiçao {
             width: 20px;
+            padding: 0px -10px 0px -10px;
         }
         td.numero {
             text-align: right;
+        }
+        td.total {
+            background-color: grey;
+            color: white;
+        }
+        td#totalmente  {
+            background-color: grey;
+            color: white;
         }
     </style>
 </head>
@@ -105,7 +115,8 @@
         <tfoot>
             <tr>
                 <th>Total de habitantes</th>
-                <td>0000</td>
+                <td class="total">Total</td>
+                <td class="numero" id="totalmente"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
     </table>
