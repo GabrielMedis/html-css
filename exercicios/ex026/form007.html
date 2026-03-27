@@ -13,16 +13,20 @@
             <select name="estado" id="iest">
                 <optgroup label="Região Sudeste">
                     <option value="SP">São Paulo</option>
-                    <option value="MG">Minas Gerais</option>
+                    <option value="MG" selected>Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
                 </optgroup>
 
-                <optgroup>
+                <optgroup label="Região Nordeste">
                     <option value="MA">Maranhão</option>
                     <option value="PE">Pernambuco</option>
                     <option value="Rn">Rio Grande do Norte</option>
                 </optgroup>
             </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof">
         </p>
         <p>
             <input type="submit" value="Enviar">
