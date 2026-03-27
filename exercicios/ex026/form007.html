@@ -8,6 +8,7 @@
 <body>
     <h1>Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on"></form>
+
         <p>
             <label for="iest">Estado</label>
             <select name="estado" id="iest">
@@ -26,6 +27,7 @@
                 </optgroup>
             </select>
         </p>
+
         <p>
             <label for="iprof">Profissão</label>
             <input type="text" name="prof" id="iprof" list="istprof">
@@ -36,10 +38,18 @@
                 <option value="PROF">Professor</option>
             </datalist>
         </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
     </form>
 </body>
 </html>
