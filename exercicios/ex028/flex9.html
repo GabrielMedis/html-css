@@ -14,7 +14,9 @@
         }
 
         header {
+            color: white;
             background-color: rgb(92, 92, 92);
+            padding: 10px; 
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -22,19 +24,29 @@
 
         header > h1 {
             color: white;
+            flex: 0 0 200px;
         }
 
-        nav {
+        header > nav {
             border: 1px solid black;
+            display: flex;
         }
 
-        a {
+        header > nav > div {
+            display: flex;
+        }
+
+        header > nav > div > a {
             text-decoration: none;
             color: white;
             background-color: black;
             text-align: center;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            flex: 1 1 200px;
         }
-        
+
         body {
             border: 1px solid black;
             border-radius: 12px;
