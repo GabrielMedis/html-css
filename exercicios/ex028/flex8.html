@@ -17,18 +17,25 @@
             text-align: center;
             flex-basis:250px;
         }
+        div.item#caixaA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div.item#caixaB {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        div.item#caixaC {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
+        <div class="item" id="caixaA">A</div>
+        <div class="item" id="caixaB">B</div>
+        <div class="item" id="caixaC">C</div>
     </div>
 </body>
 </html>
